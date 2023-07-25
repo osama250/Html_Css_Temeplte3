@@ -288,3 +288,64 @@ header nav .form i {
     line-height: 2;  color: #777;
 }
 /* end services  ///////////////////////////////////////////////////////// */
+/* start design \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+.design {
+    padding-top:    var(--section-padding);
+    padding-bottom: var(--section-padding);
+    height: 600px;
+    position: relative;
+    background-image: url('../image/l.jpg');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.design::before {
+    content: '';
+    position: absolute;
+    left: 0;        top: 0;
+    height: 100%;   width: 100%;
+    background-color: rgb( 0 0 0 / 60% );
+} 
+
+.design .image ,
+.design .text {
+    position: relative;
+    z-index: 4;
+    flex: 1;
+}
+
+.design .image {
+    position: relative;
+    bottom: -180px;
+}
+@media ( max-width:767px ) {
+    .design .image { 
+        display: none;
+    }
+}
+.design .image img {
+    text-align: center;
+    max-width: 100%;
+}
+.design .text {
+    color: #fff;
+    padding: 50px;
+    background-color: var(--main-color);
+}
+.design .text h2 {
+    font-weight: normal;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+.design .text ul li  {
+    padding: 15px 0;
+}
+.design .text ul li::before {
+    font-family: 'Font Awesome 5 free';
+    content: "\f108";
+    margin-right: 20px;
+    position: relative;
+    top: 1px;
+} 
+/* end Design  $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
